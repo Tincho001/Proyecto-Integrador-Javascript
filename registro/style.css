@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+body{
+  font-family: 'Poiret One', cursive;
+  background-color: black;
+}
+
+/*Header*/
+header {
+  
+  background: linear-gradient(209deg, rgba(255,152,47,1) 0%, rgba(89,136,255,0.9221813725490196) 40%);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 78px;
+  padding: 0px 70px 0px 30px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.logo {
+  height: 150%;
+}
+
+
+
+.iconohome{
+  height: 40px;
+  cursor: pointer;
+}
+
+
+main {
+  max-width: 1200px;
+  height: 75vh;
+  margin: 0 auto;
+  -webkit-animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  animation: puff-in-top 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        }
+        @-webkit-keyframes puff-in-top {
+          0% {
+            -webkit-transform: scale(2);
+                    transform: scale(2);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            -webkit-filter: blur(4px);
+                    filter: blur(4px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+          }
+        }
+        @keyframes puff-in-top {
+          0% {
+            -webkit-transform: scale(2);
+                    transform: scale(2);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            -webkit-filter: blur(4px);
+                    filter: blur(4px);
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            -webkit-filter: blur(0px);
+                    filter: blur(0px);
+            opacity: 1;
+          }
+        }
+
+
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  gap: 50px;
+}
+
+.content__text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text__btns {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 1rem;
+  background-color: #252525;
+}
+
+.login__btn {
+  background-color: #242424;
+}
+
+.login__btn span {
+  background: linear-gradient(90deg, #ffa100, #ff005c);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.register__btn {
+  background: linear-gradient(90deg, #ffa100, #ff005c);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer {
+
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 0;
+  color: white;
+
+ 
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 576px) {  /*footer*/
+  .footer-links {
+    flex-direction: column;
+    text-align: center;
+  }
+}

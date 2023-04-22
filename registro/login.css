@@ -1,0 +1,69 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-top: 140px;
+  
+}
+.form__container p{
+font-size: 30px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px; 
+}
+
+.form__title {
+  margin-bottom: 30px;
+}
+
+.form__input {
+  font-family: 'Poiret One', cursive;
+  padding: 15px 35px 15px 15px;
+  border-radius: 8px;
+  background-color: #252525;
+  color: #fff;
+  outline: none;
+  border: none;
+  width: 330px;
+}
+
+.form__submit__btn {
+  font-family: 'Poiret One', cursive;
+  font-size:1.2rem;
+  background-image: linear-gradient( 109.6deg,  #FF982F 11.2%, #5988FF 91.1% );
+  color: white;
+  transition: all 0.3s ease;
+  padding: 12px 25px;
+  border-radius: 3rem;
+  cursor: pointer;
+  width: 170px;
+}
+
+.form__submit__btn:hover {
+  background: #FF982F;
+  transition: 0.3s all ease-in;
+}
+
+/* Error / Success */
+.form__field.error input {
+  border: 1px solid #dc3545;
+}
+
+.form__field small {
+  color: #dc3545;
+  max-width: 350px;
+  text-align: center;
+  padding: 1px 0;
+}
+
+.form__field.success input {
+  border: 1px solid #28a745;
+}
