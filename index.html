@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./assets/styles.css" />
   <link rel="stylesheet" href="./assets/mediaqueries.css" />
   <link rel="stylesheet" href="./assets/animaciones.css" />
+  <link rel="stylesheet" href="./login/logeo.css">
   <!-- CDN DE FONT-AWESOME (carrito) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
@@ -39,7 +40,25 @@
           <a href="/registro/register.html" target="_self">Registrarse</a>
         </li>
         <li>
-          <a href="" target="_blank">Login</a>
+          <a href="" target="_blank"id="login-link" ><img src="./assets/img/user-circle.svg" alt="" class="iconohome"></a><div id="user-info" style="display: none;"></div>
+          
+  <!-- LOGEO -->
+  <!-- <button id="login-btn">Login</button> -->
+  <div class="login-modal">
+    <div class="login-modal-content">
+      <h2 class="h2log">Login</h2>
+      <p>Ingresar nombre de ususario y contraseña</p>
+      <form id="login-form" class="login-form">
+        <input type="text" id="username-input" placeholder="User( 7 letras )">
+        <input type="password" id="password-input" placeholder="Password (7 letras o numeros)">
+        <button type="submit" class="form__submit__btn" >Ingrese</button>
+      </form>
+      <div id="error-message" style="display: none;"></div>
+    </div>
+  </div>
+  
+  
+  
         </li>
       </ul>
 
@@ -138,6 +157,7 @@
   <div class="add-modal"></div>
   <script src="./assets/data.js"></script>
   <script src="./assets/index.js"></script>
+  <script src="./login/applogeo.js"></script>
 
   
 </body>

@@ -102,10 +102,7 @@ header {
   top: 65px;
   right: 0;
   padding: 50px 30px;
-  
-  background: rgb(255,152,47);
   background: linear-gradient(360deg, rgba(255,152,47,1) 0%, rgba(89,136,255,1) 32%);
-  
   border-left: 1px solid var(--nav-bg);
   display: flex;
   flex-direction: column;
